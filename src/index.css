@@ -1,0 +1,34 @@
+@import "tailwindcss";
+
+h2 {
+  @apply text-2xl font-bold text-violet-800;
+}
+
+.button {
+  @apply flex items-center gap-2 px-2 py-1 text-sm text-white rounded transition-colors min-w-25 justify-center;
+}
+
+.workspace {
+  @apply flex flex-col gap-4 mx-auto p-8 sm:rounded-lg bg-violet-100 sm:max-w-2/3;
+}
+
+.input-field {
+  @apply border border-gray-300 rounded-md p-2 focus:outline-none focus:ring-2 focus:ring-violet-500 transition;
+}
+
+.todo-list {
+  @apply flex flex-col gap-4;
+}
+
+.todo-item {
+  @apply flex flex-row gap-4 justify-between sm:items-center p-4 bg-white rounded-md shadow hover:shadow-lg transition;
+}
+
+.delete-icon {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 24px;
+  height: 24px;
+}
